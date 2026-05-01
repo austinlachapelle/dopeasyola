@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dope as Yola — Most Popular Cannabis Creator on Earth</title>
+<meta name="description" content="Forbes-recognized cannabis content creator, comedian, and founder of Push Trees, The Dopest Shop, and Proper Papers." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Caprasimo&family=Caveat:wght@500;700&family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0e0e0e;
+    --bg-cream: #f3ead4;
+    --bg-mustard: #e8b53d;
+    --bg-rust: #cf4a14;
+    --ink: #0e0e0e;
+    --ink-cream: #f3ead4;
+    --ink-dim-dark: #4a4642;
+    --ink-dim-light: #b5ada0;
+    --orange: #ff6a13;
+    --orange-deep: #cf4a14;
+    --line-dark: rgba(243, 234, 212, 0.14);
+    --line-light: rgba(14, 14, 14, 0.18);
+
+    --f-fat: 'Bungee', 'Impact', sans-serif;
+    --f-fatter: 'Bungee Shade', 'Impact', sans-serif;
+    --f-slab: 'Caprasimo', 'Rockwell', serif;
+    --f-body: 'Rubik', system-ui, sans-serif;
+    --f-hand: 'Caveat', cursive;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink-cream);
+    font-family: var(--f-body);
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95 0 0 0 0 0.85 0 0 0 0 0.6 0 0 0 0.4 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/></svg>");
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 100;
+    mix-blend-mode: overlay;
+  }
+
+  ::selection { background: var(--orange); color: var(--bg); }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 48px);
+  }
+
+  /* ============== TICKER ============== */
+  .ticker-strip {
+    background: var(--orange);
+    color: var(--bg);
+    overflow: hidden;
+    border-bottom: 3px solid var(--bg);
+    position: relative;
+    z-index: 50;
+  }
+  .ticker-track {
+    display: flex;
+    gap: 40px;
+    white-space: nowrap;
+    padding: 10px 0;
+    animation: ticker 38s linear infinite;
+    font-family: var(--f-fat);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .ticker-track .star {
+    display: inline-block;
+    transform: rotate(-8deg);
+    font-size: 18px;
+  }
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ============== NAV ============== */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(14, 14, 14, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 2px solid var(--orange);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+  .logo {
+    font-family: var(--f-fat);
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ink-cream);
+    text-transform: uppercase;
+  }
+  .logo-blob {
+    width: 36px; height: 36px;
+    background: var(--orange);
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(-6deg);
+    box-shadow: 3px 3px 0 var(--bg-mustard);
+  }
+  .logo-blob::after {
+    content: '';
+    position: absolute;
+    top: 8px; left: 9px;
+    width: 8px; height: 8px;
+    background: var(--ink-cream);
+    border-radius: 50%;
+  }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  .nav-links a {
+    font-family: var(--f-body);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-cream);
+    transition: color 0.15s;
+  }
+  .nav-links a:hover { color: var(--orange); }
+  .nav-cta {
+    background: var(--orange);
+    color: var(--bg) !important;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-family: var(--f-fat) !important;
+    font-size: 13px !important;
+    transform: rotate(-2deg);
+    box-shadow: 3px 3px 0 var(--bg-mustard);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .nav-cta:hover {
+    transform: rotate(-2deg) translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--bg-mustard);
+  }
+
+  @media (max-width: 800px) {
+    .nav-links a:not(.nav-cta) { display: none; }
+  }
+
+  /* ============== HERO ============== */
+  .hero {
+    position: relative;
+    padding: 80px 0 60px;
+    overflow: hidden;
+    border-bottom: 4px solid var(--bg);
+    background:
+      radial-gradient(ellipse 70% 60% at 80% 20%, rgba(255, 106, 19, 0.18), transparent 65%),
+      radial-gradient(ellipse 50% 40% at 10% 90%, rgba(232, 181, 61, 0.1), transparent 70%),
+      var(--bg);
+  }
+
+  .sticker {
+    position: absolute;
+    font-family: var(--f-fat);
+    text-transform: uppercase;
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+  }
+  .sticker-1 {
+    top: 60px; right: 5%;
+    background: var(--bg-mustard);
+    color: var(--bg);
+    padding: 12px 18px;
+    transform: rotate(8deg);
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 4px 4px 0 var(--orange);
+  }
+  .sticker-2 {
+    bottom: 40px; left: 4%;
+    background: var(--orange);
+    color: var(--bg);
+    padding: 14px 20px;
+    transform: rotate(-6deg);
+    border-radius: 50%;
+    font-size: 13px;
+    width: 130px; height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 4px 4px 0 var(--bg);
+  }
+  @media (max-width: 900px) { .sticker { display: none; } }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--bg-mustard);
+    color: var(--bg);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-family: var(--f-fat);
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    transform: rotate(-1.5deg);
+    box-shadow: 3px 3px 0 var(--bg);
+  }
+  .hero-eyebrow .blob {
+    width: 8px; height: 8px;
+    background: var(--orange-deep);
+    border-radius: 50%;
+    animation: blink 1.4s ease-in-out infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  h1.hero-title {
+    font-family: var(--f-fat);
+    font-size: clamp(58px, 12vw, 200px);
+    line-height: 0.86;
+    letter-spacing: -0.01em;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+  }
+  .hero-title .pop {
+    color: var(--orange);
+    display: inline-block;
+    transform: rotate(-3deg);
+  }
+  .hero-title .shade {
+    font-family: var(--f-fatter);
+    color: var(--bg-mustard);
+  }
+  .hero-title .slab {
+    font-family: var(--f-slab);
+    text-transform: none;
+    color: var(--ink-cream);
+    letter-spacing: -0.01em;
+  }
+
+  .hero-sub {
+    font-family: var(--f-body);
+    font-size: 17px;
+    color: var(--ink-dim-light);
+    max-width: 580px;
+    margin-bottom: 36px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 3;
+  }
+  .hero-sub strong { color: var(--ink-cream); font-weight: 700; }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+  }
+  .btn-fat {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--orange);
+    color: var(--bg);
+    font-family: var(--f-fat);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 0 var(--bg-mustard);
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 3px solid var(--bg);
+  }
+  .btn-fat:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0 var(--bg-mustard);
+  }
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink-cream);
+    font-family: var(--f-fat);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    border-radius: 6px;
+    border: 3px solid var(--ink-cream);
+    transition: background 0.15s, color 0.15s;
+  }
+  .btn-ghost:hover { background: var(--ink-cream); color: var(--bg); }
+
+  .hero-hand {
+    font-family: var(--f-hand);
+    font-size: 22px;
+    color: var(--bg-mustard);
+    margin-top: 24px;
+    display: inline-block;
+    transform: rotate(-2deg);
+  }
+  .hero-hand .arrow {
+    display: inline-block;
+    transform: rotate(15deg) translateY(2px);
+    margin-right: 6px;
+    font-size: 26px;
+  }
+
+  /* ============== STATS ============== */
+  .stats {
+    background: var(--bg-cream);
+    color: var(--ink);
+    border-top: 4px solid var(--bg);
+    border-bottom: 4px solid var(--bg);
+    overflow: hidden;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 720px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+
+  .stat-cell {
+    padding: 36px 28px;
+    border-right: 3px solid var(--ink);
+    border-bottom: 3px solid var(--ink);
+    position: relative;
+  }
+  @media (min-width: 720px) { .stat-cell { border-bottom: none; } }
+  .stat-cell:last-child { border-right: none; }
+  .stat-cell:nth-child(2n) { border-right: none; }
+  @media (min-width: 720px) {
+    .stat-cell:nth-child(2n) { border-right: 3px solid var(--ink); }
+    .stat-cell:last-child { border-right: none; }
+  }
+  .stat-cell:nth-child(odd) { background: var(--bg-cream); }
+  .stat-cell:nth-child(even) { background: var(--bg-mustard); }
+
+  .stat-num {
+    font-family: var(--f-fat);
+    font-size: clamp(48px, 6.5vw, 84px);
+    line-height: 0.9;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .stat-num .plus { color: var(--orange-deep); }
+  .stat-label {
+    font-family: var(--f-body);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+  }
+  .stat-cell::before {
+    content: '?';
+    position: absolute;
+    top: 14px; right: 18px;
+    font-size: 18px;
+    color: var(--orange);
+  }
+
+  /* ============== SECTION HEAD ============== */
+  .section-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 80px 0 40px;
+    border-bottom: 2px dashed var(--line-dark);
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+  }
+  .section-num {
+    font-family: var(--f-fat);
+    font-size: 14px;
+    background: var(--orange);
+    color: var(--bg);
+    padding: 8px 14px;
+    border-radius: 4px;
+    transform: rotate(-2deg);
+    flex-shrink: 0;
+    text-transform: uppercase;
+  }
+  .section-title {
+    font-family: var(--f-fat);
+    font-size: clamp(36px, 5.5vw, 76px);
+    line-height: 0.9;
+    text-transform: uppercase;
+    flex: 1;
+    min-width: 280px;
+  }
+  .section-title .slab {
+    font-family: var(--f-slab);
+    text-transform: none;
+    color: var(--orange);
+    letter-spacing: -0.01em;
+  }
+  .section-title .underline {
+    background: linear-gradient(transparent 70%, var(--bg-mustard) 70%);
+    padding: 0 4px;
+  }
+
+  /* ============== ABOUT ============== */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding-bottom: 80px;
+    align-items: start;
+  }
+  @media (min-width: 900px) { .about-grid { grid-template-columns: 1.4fr 1fr; gap: 60px; } }
+
+  .about-bio p {
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--ink-dim-light);
+    margin-bottom: 18px;
+  }
+  .about-bio p strong { color: var(--ink-cream); font-weight: 700; }
+  .about-bio p:first-child {
+    font-family: var(--f-slab);
+    font-size: clamp(22px, 2.6vw, 30px);
+    line-height: 1.3;
+    color: var(--ink-cream);
+    margin-bottom: 28px;
+  }
+  .about-bio p:first-child::first-letter {
+    font-family: var(--f-fat);
+    color: var(--orange);
+    font-size: 1.6em;
+    line-height: 0.9;
+    float: left;
+    padding: 4px 8px 0 0;
+  }
+
+  .id-card {
+    background: var(--bg-cream);
+    color: var(--ink);
+    padding: 28px 28px 32px;
+    border-radius: 6px;
+    border: 3px solid var(--ink);
+    box-shadow: 8px 8px 0 var(--orange);
+    transform: rotate(1.5deg);
+    position: relative;
+  }
+  .id-card::before {
+    content: 'OFFICIAL';
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background: var(--orange);
+    color: var(--bg);
+    padding: 4px 12px;
+    font-family: var(--f-fat);
+    font-size: 11px;
+    border: 3px solid var(--ink);
+    transform: rotate(-3deg);
+  }
+  .id-card-title {
+    font-family: var(--f-fat);
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 2px dashed var(--ink);
+    line-height: 1;
+  }
+  .id-list { list-style: none; }
+  .id-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--line-light);
+    font-size: 14px;
+  }
+  .id-list li:last-child { border-bottom: none; }
+  .id-list .k {
+    font-family: var(--f-fat);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--orange-deep);
+  }
+  .id-list .v {
+    font-weight: 500;
+    color: var(--ink);
+    text-align: right;
+  }
+
+  /* ============== BRANDS ============== */
+  .brands-section { border-top: 2px dashed var(--line-dark); }
+  .brands-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 80px;
+  }
+  @media (min-width: 720px) { .brands-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+
+  .brand {
+    padding: 32px 28px;
+    border-radius: 8px;
+    border: 4px solid var(--bg);
+    position: relative;
+    overflow: hidden;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .brand[data-b="dau"] {
+    background: var(--bg-mustard);
+    color: var(--ink);
+    box-shadow: 8px 8px 0 var(--orange);
+    transform: rotate(-1deg);
+  }
+  .brand[data-b="dau"]:hover { box-shadow: 11px 11px 0 var(--orange); transform: rotate(-1deg) translate(-3px, -3px); }
+
+  .brand[data-b="pt"] {
+    background: var(--orange);
+    color: var(--bg);
+    box-shadow: 8px 8px 0 var(--bg-mustard);
+    transform: rotate(0.8deg);
+  }
+  .brand[data-b="pt"]:hover { box-shadow: 11px 11px 0 var(--bg-mustard); transform: rotate(0.8deg) translate(-3px, -3px); }
+
+  .brand[data-b="tds"] {
+    background: var(--bg-cream);
+    color: var(--ink);
+    box-shadow: 8px 8px 0 var(--bg);
+    transform: rotate(0.5deg);
+  }
+  .brand[data-b="tds"]:hover { box-shadow: 11px 11px 0 var(--bg); transform: rotate(0.5deg) translate(-3px, -3px); }
+
+  .brand[data-b="prp"] {
+    background: var(--bg);
+    color: var(--ink-cream);
+    border-color: var(--orange);
+    box-shadow: 8px 8px 0 var(--orange);
+    transform: rotate(-0.8deg);
+  }
+  .brand[data-b="prp"]:hover { box-shadow: 11px 11px 0 var(--orange); transform: rotate(-0.8deg) translate(-3px, -3px); }
+
+  .brand-tag {
+    font-family: var(--f-fat);
+    font-size: 11px;
+    text-transform: uppercase;
+    background: var(--bg);
+    color: var(--bg-mustard);
+    padding: 4px 10px;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-bottom: 18px;
+  }
+  .brand[data-b="prp"] .brand-tag { background: var(--orange); color: var(--bg); }
+  .brand[data-b="pt"] .brand-tag { background: var(--bg); color: var(--orange); }
+
+  .brand-name {
+    font-family: var(--f-fat);
+    font-size: clamp(34px, 3.4vw, 48px);
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .brand-name .slab {
+    font-family: var(--f-slab);
+    text-transform: none;
+    letter-spacing: -0.01em;
+  }
+  .brand-tagline {
+    font-family: var(--f-hand);
+    font-size: 26px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    transform: rotate(-1deg);
+    display: inline-block;
+  }
+  .brand[data-b="dau"] .brand-tagline,
+  .brand[data-b="tds"] .brand-tagline { color: var(--bg-rust); }
+  .brand[data-b="pt"] .brand-tagline { color: var(--bg); }
+  .brand[data-b="prp"] .brand-tagline { color: var(--bg-mustard); }
+
+  .brand-desc {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 22px;
+    flex: 1;
+  }
+  .brand[data-b="dau"] .brand-desc,
+  .brand[data-b="tds"] .brand-desc { color: var(--ink-dim-dark); }
+
+  .brand-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+  .chip {
+    font-family: var(--f-fat);
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 11px;
+    border-radius: 999px;
+    border: 2px solid currentColor;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--f-fat);
+    font-size: 13px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    padding: 12px 18px;
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--orange);
+    transition: gap 0.15s;
+  }
+  .brand[data-b="prp"] .brand-link { background: var(--orange); color: var(--bg); }
+  .brand-link:hover { gap: 14px; }
+
+  .brand .ghost {
+    position: absolute;
+    bottom: -50px;
+    right: -16px;
+    font-family: var(--f-fatter);
+    font-size: 240px;
+    line-height: 0.8;
+    opacity: 0.18;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* ============== PRESS ============== */
+  .press {
+    background: var(--bg-cream);
+    color: var(--ink);
+    border-top: 4px solid var(--bg);
+    border-bottom: 4px solid var(--bg);
+    padding-bottom: 80px;
+    position: relative;
+  }
+  .press .section-head { border-color: var(--line-light); }
+  .press .section-num { background: var(--bg); color: var(--bg-cream); }
+  .press .section-title { color: var(--ink); }
+  .press .section-title .slab { color: var(--orange-deep); }
+  .press .section-title .underline { background: linear-gradient(transparent 70%, var(--orange) 70%); color: var(--bg-cream); }
+
+  .press-marquee {
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--bg-cream);
+    margin-bottom: 64px;
+    border-top: 3px solid var(--bg);
+    border-bottom: 3px solid var(--bg);
+  }
+  .press-marquee-track {
+    display: flex;
+    gap: 56px;
+    white-space: nowrap;
+    padding: 28px 0;
+    animation: ticker 28s linear infinite;
+    font-family: var(--f-fat);
+    font-size: clamp(28px, 4.5vw, 56px);
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+  }
+  .press-marquee-track .acc { color: var(--orange); }
+  .press-marquee-track .star { font-size: 0.7em; color: var(--bg-mustard); }
+
+  .press-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 800px) { .press-list { grid-template-columns: repeat(3, 1fr); } }
+
+  .press-card {
+    background: var(--bg-cream);
+    border: 3px solid var(--ink);
+    border-radius: 6px;
+    padding: 24px 22px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 6px 6px 0 var(--ink);
+    transition: transform 0.15s, box-shadow 0.15s;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+  }
+  .press-card:nth-child(1) { transform: rotate(-1deg); }
+  .press-card:nth-child(2) { transform: rotate(1deg); }
+  .press-card:nth-child(3) { transform: rotate(-0.5deg); }
+  .press-card:nth-child(1):hover { transform: rotate(-1deg) translate(-2px, -2px); box-shadow: 8px 8px 0 var(--orange); }
+  .press-card:nth-child(2):hover { transform: rotate(1deg) translate(-2px, -2px); box-shadow: 8px 8px 0 var(--orange); }
+  .press-card:nth-child(3):hover { transform: rotate(-0.5deg) translate(-2px, -2px); box-shadow: 8px 8px 0 var(--orange); }
+
+  .press-outlet {
+    font-family: var(--f-fat);
+    font-size: 11px;
+    text-transform: uppercase;
+    background: var(--orange);
+    color: var(--bg);
+    padding: 6px 12px;
+    align-self: flex-start;
+    margin-bottom: 18px;
+    transform: rotate(-2deg);
+  }
+  .press-headline {
+    font-family: var(--f-slab);
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    flex: 1;
+    color: var(--ink);
+  }
+  .press-meta {
+    font-family: var(--f-fat);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--ink-dim-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 2px dashed var(--line-light);
+  }
+  .press-meta .arrow { color: var(--orange-deep); font-size: 16px; }
+
+  /* ============== COMEDY ============== */
+  .comedy {
+    background: var(--bg);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .comedy::before {
+    content: 'LIVE ? UNFILTERED ? UNRELEASED ? LIVE ? UNFILTERED ? UNRELEASED ? LIVE ? UNFILTERED ?';
+    position: absolute;
+    top: 24px;
+    left: 0; right: 0;
+    font-family: var(--f-fat);
+    font-size: 14px;
+    color: var(--orange);
+    white-space: nowrap;
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  .comedy-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-top: 40px;
+  }
+  @media (min-width: 900px) { .comedy-grid { grid-template-columns: 1.2fr 0.8fr; } }
+
+  .comedy-eyebrow {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--bg);
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-family: var(--f-fat);
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    transform: rotate(-1deg);
+  }
+  .comedy-title {
+    font-family: var(--f-fat);
+    font-size: clamp(54px, 9vw, 140px);
+    line-height: 0.86;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .comedy-title .slab {
+    font-family: var(--f-slab);
+    text-transform: none;
+    color: var(--orange);
+  }
+  .comedy-title .shade {
+    font-family: var(--f-fatter);
+    color: var(--bg-mustard);
+  }
+  .comedy-desc {
+    font-size: 17px;
+    color: var(--ink-dim-light);
+    max-width: 56ch;
+    margin-bottom: 28px;
+    line-height: 1.6;
+  }
+  .comedy-desc strong { color: var(--ink-cream); font-weight: 700; }
+
+  .venue-list {
+    display: grid;
+    gap: 12px;
+  }
+  .venue {
+    background: var(--bg-cream);
+    color: var(--ink);
+    padding: 18px 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    border: 3px solid var(--ink);
+    border-radius: 6px;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 4px 4px 0 var(--orange);
+  }
+  .venue:nth-child(odd) { transform: rotate(-0.5deg); }
+  .venue:nth-child(even) { transform: rotate(0.5deg); background: var(--bg-mustard); }
+  .venue:hover {
+    transform: translate(-2px, -2px) rotate(0deg);
+    box-shadow: 6px 6px 0 var(--orange);
+  }
+  .venue-tag {
+    font-family: var(--f-fat);
+    font-size: 11px;
+    background: var(--bg);
+    color: var(--orange);
+    padding: 4px 9px;
+    border-radius: 3px;
+  }
+  .venue-name {
+    font-family: var(--f-fat);
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .venue-city {
+    font-family: var(--f-hand);
+    font-size: 18px;
+    color: var(--bg-rust);
+  }
+
+  /* ============== CHANNELS ============== */
+  .channels {
+    background: var(--bg-cream);
+    color: var(--ink);
+    border-top: 4px solid var(--bg);
+    border-bottom: 4px solid var(--bg);
+    padding-bottom: 80px;
+  }
+  .channels .section-head { border-color: var(--line-light); }
+  .channels .section-num { background: var(--orange); color: var(--bg); }
+  .channels .section-title { color: var(--ink); }
+  .channels .section-title .slab { color: var(--orange-deep); }
+  .channels .section-title .underline { background: linear-gradient(transparent 70%, var(--bg-mustard) 70%); }
+
+  .channels-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 720px) { .channels-grid { grid-template-columns: repeat(5, 1fr); gap: 18px; } }
+
+  .channel {
+    background: var(--bg);
+    color: var(--ink-cream);
+    padding: 24px 20px;
+    border-radius: 6px;
+    border: 3px solid var(--ink);
+    text-align: left;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 0 var(--orange);
+    transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+    position: relative;
+  }
+  .channel:nth-child(1) { transform: rotate(-1deg); }
+  .channel:nth-child(2) { transform: rotate(1deg); }
+  .channel:nth-child(3) { transform: rotate(-0.5deg); }
+  .channel:nth-child(4) { transform: rotate(0.8deg); }
+  .channel:nth-child(5) { transform: rotate(-0.8deg); }
+
+  .channel:hover {
+    background: var(--orange);
+    transform: translate(-2px, -2px) rotate(0deg);
+    box-shadow: 7px 7px 0 var(--bg);
+  }
+  .channel-platform {
+    font-family: var(--f-fat);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--bg-mustard);
+    margin-bottom: 14px;
+  }
+  .channel:hover .channel-platform { color: var(--bg); }
+  .channel-handle {
+    font-family: var(--f-fat);
+    font-size: 18px;
+    margin-bottom: 6px;
+    word-break: break-word;
+    text-transform: lowercase;
+  }
+  .channel-note {
+    font-family: var(--f-hand);
+    font-size: 17px;
+    color: var(--bg-mustard);
+    line-height: 1.2;
+    margin-top: 14px;
+  }
+  .channel:hover .channel-note { color: var(--bg); }
+
+  /* ============== FOOTER ============== */
+  footer {
+    background: var(--bg);
+    border-top: 4px solid var(--orange);
+    padding: 70px 0 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-massive {
+    font-family: var(--f-fat);
+    font-size: clamp(72px, 16vw, 240px);
+    line-height: 0.85;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: var(--ink-cream);
+  }
+  .footer-massive .slab {
+    font-family: var(--f-slab);
+    text-transform: none;
+    color: var(--orange);
+  }
+  .footer-massive .shade {
+    font-family: var(--f-fatter);
+    color: var(--bg-mustard);
+  }
+  .footer-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-top: 36px;
+    border-top: 2px dashed var(--line-dark);
+  }
+  @media (min-width: 720px) { .footer-cols { grid-template-columns: 2fr 1fr 1fr 1fr; } }
+
+  .footer-col h4 {
+    font-family: var(--f-fat);
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 16px;
+  }
+  .footer-col a, .footer-col p {
+    font-family: var(--f-body);
+    font-size: 15px;
+    color: var(--ink-dim-light);
+    display: block;
+    padding: 4px 0;
+    line-height: 1.5;
+    transition: color 0.15s;
+  }
+  .footer-col a:hover { color: var(--orange); }
+
+  .newsletter {
+    display: flex;
+    margin-top: 14px;
+    max-width: 420px;
+    border: 3px solid var(--orange);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--bg);
+  }
+  .newsletter input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 12px 16px;
+    color: var(--ink-cream);
+    font-family: var(--f-body);
+    font-size: 14px;
+    outline: none;
+  }
+  .newsletter input::placeholder { color: var(--ink-dim-light); }
+  .newsletter button {
+    background: var(--orange);
+    color: var(--bg);
+    border: none;
+    padding: 12px 22px;
+    font-family: var(--f-fat);
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .newsletter button:hover { background: var(--bg-mustard); }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 32px;
+    margin-top: 48px;
+    border-top: 2px dashed var(--line-dark);
+    font-family: var(--f-fat);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--ink-dim-light);
+  }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-strip" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Forbes — Most Popular Cannabis Creator on Earth</span><span class="star">?</span>
+    <span>3 Billion+ YouTube Impressions</span><span class="star">?</span>
+    <span>Now Touring Stand-Up Comedy</span><span class="star">?</span>
+    <span>Dope As Usual — Top 10 Spotify '24</span><span class="star">?</span>
+    <span>Push Trees @ Zumiez Nationwide</span><span class="star">?</span>
+    <span>Forbes — Most Popular Cannabis Creator on Earth</span><span class="star">?</span>
+    <span>3 Billion+ YouTube Impressions</span><span class="star">?</span>
+    <span>Now Touring Stand-Up Comedy</span><span class="star">?</span>
+    <span>Dope As Usual — Top 10 Spotify '24</span><span class="star">?</span>
+    <span>Push Trees @ Zumiez Nationwide</span><span class="star">?</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-blob"></span>
+      Dope&nbsp;as&nbsp;Yola
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#brands">Brands</a>
+      <a href="#press">Press</a>
+      <a href="#comedy">Comedy</a>
+      <a href="#contact">Contact</a>
+      <a href="#tickets" class="nav-cta">Get Tickets</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <span class="sticker sticker-1">? Forbes #1 ?</span>
+  <span class="sticker sticker-2">Weed<br>&amp;<br>Laughing</span>
+
+  <div class="container">
+    <span class="hero-eyebrow">
+      <span class="blob"></span>
+      Live from Los Angeles
+    </span>
+
+    <h1 class="hero-title">
+      The <span class="pop">Dopest</span><br>
+      <span class="slab">cannabis creator</span><br>
+      on <span class="shade">Earth.</span>
+    </h1>
+
+    <p class="hero-sub">
+      <strong>Thomas "Dope as Yola" Araujo</strong> — Forbes-recognized content creator, four-brand operator, podcast host, and stand-up comedian. Building a cannabis empire one joint, one joke, and one jar at a time.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#brands" class="btn-fat">See the Empire ?</a>
+      <a href="#tickets" class="btn-ghost">Catch a Show</a>
+    </div>
+
+    <p class="hero-hand"><span class="arrow">?</span>Scroll if you're cool</p>
+  </div>
+</header>
+
+<!-- STATS -->
+<section class="stats" aria-label="By the numbers">
+  <div class="container" style="padding: 0;">
+    <div class="stats-grid">
+      <div class="stat-cell">
+        <div class="stat-num">3B<span class="plus">+</span></div>
+        <div class="stat-label">YouTube Impressions</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">2M<span class="plus">+</span></div>
+        <div class="stat-label">Subscribers</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">240K<span class="plus">+</span></div>
+        <div class="stat-label">Comments Replied</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">9K<span class="plus">+</span></div>
+        <div class="stat-label">5-Star Reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">01 / The Story</span>
+      <h2 class="section-title">From a trunk full of weed to a <span class="slab">global brand.</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-bio">
+        <p>Started off adulthood with a trunk full of weed and a route up and down California. Found Instagram. Found the cannabis community. Started recreating favorite movie scenes with miniatures, nugs, and small toys — and never looked back.</p>
+        <p>Eleven years later, <strong>Thomas Araujo</strong> is the first cannabis YouTuber to ever cross 2 million subscribers. Forbes called him the most popular cannabis content creator on Earth. He and co-host Marty O'Neill became the first podcast duo in history to give a TED Talk.</p>
+        <p>The secret isn't algorithmic — it's stubborn. Despite shadow bans, demonetization, and 30+ Instagram deletions, the audience kept coming back. Over six years he's personally answered <strong>240,000+ comments</strong>. No bots. Four to six hours a day. Every day. Talking to fans.</p>
+        <p>Now he runs <strong>four brands</strong>, hosts a top-10 Spotify podcast, tours nationally as a stand-up — and still posts reviews from the same kitchen counter.</p>
+      </div>
+
+      <aside class="id-card">
+        <h3 class="id-card-title">The File</h3>
+        <ul class="id-list">
+          <li><span class="k">Real Name</span><span class="v">Thomas Araujo</span></li>
+          <li><span class="k">From</span><span class="v">Merced, CA</span></li>
+          <li><span class="k">Based</span><span class="v">Los Angeles</span></li>
+          <li><span class="k">Co-Host</span><span class="v">Marty O'Neill</span></li>
+          <li><span class="k">Co-Founder</span><span class="v">Wife — Rosie</span></li>
+          <li><span class="k">First Drop</span><span class="v">Push Trees · 2013</span></li>
+          <li><span class="k">YouTube</span><span class="v">Since 2014</span></li>
+          <li><span class="k">TED Talk</span><span class="v">Million Dollar Theatre · '23</span></li>
+          <li><span class="k">Forbes</span><span class="v">"Most Popular" · 2022</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section id="brands" class="brands-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">02 / The Empire</span>
+      <h2 class="section-title">Four brands. <span class="slab">One operator.</span></h2>
+    </div>
+
+    <div class="brands-grid">
+
+      <article class="brand" data-b="dau">
+        <span class="brand-tag">B / 01 — Media</span>
+        <h3 class="brand-name">Dope As<br>Usual <span class="slab">Pod.</span></h3>
+        <p class="brand-tagline">~ the bridge to the mainstream ~</p>
+        <p class="brand-desc">Hosted with Marty O'Neill. 60M+ independent YouTube views in three years. Apple Podcasts Top 25 Overall &amp; Comedy. Spotify partner. Featuring the biggest names in sports, music, comedy, gaming, and cannabis.</p>
+        <div class="brand-chips">
+          <span class="chip">Top 10 Spotify '24</span>
+          <span class="chip">Apple Top 25</span>
+          <span class="chip">60M+ Views</span>
+        </div>
+        <a href="#" class="brand-link">Listen Now ?</a>
+        <span class="ghost">DAU</span>
+      </article>
+
+      <article class="brand" data-b="pt">
+        <span class="brand-tag">B / 02 — Apparel</span>
+        <h3 class="brand-name">Push<br>Trees</h3>
+        <p class="brand-tagline">~ weed &amp; laughing since 2013 ~</p>
+        <p class="brand-desc">Founded with his wife Rosie. A one-time merch drop that refused to die — now a sustained streetwear brand for cannabis culture. Tees, hoodies, jackets, grinders, rolling trays, glass. One of Zumiez's fastest-selling brands of 2024.</p>
+        <div class="brand-chips">
+          <span class="chip">Est. 2013</span>
+          <span class="chip">Zumiez Nationwide</span>
+          <span class="chip">LRG Collab</span>
+        </div>
+        <a href="#" class="brand-link">Shop the Drop ?</a>
+        <span class="ghost">PT</span>
+      </article>
+
+      <article class="brand" data-b="tds">
+        <span class="brand-tag">B / 03 — Product</span>
+        <h3 class="brand-name">The <span class="slab">Dopest</span><br>Shop</h3>
+        <p class="brand-tagline">~ #2 alt-cannabinoid brand on Earth ~</p>
+        <p class="brand-desc">HHC and THC-A products, lab-tested, ships to all 50 states. Celebrity and legacy grower collaborations. 9,000+ five-star reviews. 86% returning customer rate. Built on word-of-mouth — no advertising, just fans.</p>
+        <div class="brand-chips">
+          <span class="chip">All 50 States</span>
+          <span class="chip">86% Return Rate</span>
+          <span class="chip">Lab-Tested</span>
+        </div>
+        <a href="#" class="brand-link">Shop Now ?</a>
+        <span class="ghost">TDS</span>
+      </article>
+
+      <article class="brand" data-b="prp">
+        <span class="brand-tag">B / 04 — Newest</span>
+        <h3 class="brand-name">Proper<br>Papers</h3>
+        <p class="brand-tagline">~ years in the making, 100% my way ~</p>
+        <p class="brand-desc">Not a white-labeled product with a logo slapped on. A tool Thomas actually uses every day, perfected through years of trial, error, and thousands of joints rolled on and off camera. Available DTC and wholesale.</p>
+        <div class="brand-chips">
+          <span class="chip">DTC + Wholesale</span>
+          <span class="chip">Just Launched</span>
+        </div>
+        <a href="#" class="brand-link">Roll Up ?</a>
+        <span class="ghost">PRP</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRESS -->
+<section id="press" class="press">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">03 / Press</span>
+      <h2 class="section-title">Featured <span class="slab">everywhere</span> that matters.</h2>
+    </div>
+  </div>
+
+  <div class="press-marquee" aria-hidden="true">
+    <div class="press-marquee-track">
+      <span>Forbes</span><span class="star">?</span>
+      <span class="acc">TED</span><span class="star">?</span>
+      <span>Spotify</span><span class="star">?</span>
+      <span class="acc">High Times</span><span class="star">?</span>
+      <span>People</span><span class="star">?</span>
+      <span class="acc">USA Today</span><span class="star">?</span>
+      <span>Revolt</span><span class="star">?</span>
+      <span class="acc">Complex</span><span class="star">?</span>
+      <span>XXL</span><span class="star">?</span>
+      <span>Forbes</span><span class="star">?</span>
+      <span class="acc">TED</span><span class="star">?</span>
+      <span>Spotify</span><span class="star">?</span>
+      <span class="acc">High Times</span><span class="star">?</span>
+      <span>People</span><span class="star">?</span>
+      <span class="acc">USA Today</span><span class="star">?</span>
+      <span>Revolt</span><span class="star">?</span>
+      <span class="acc">Complex</span><span class="star">?</span>
+      <span>XXL</span><span class="star">?</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="press-list">
+      <article class="press-card">
+        <div class="press-outlet">Forbes · 2022</div>
+        <h3 class="press-headline">"The Most Popular Cannabis Content Creator on Earth."</h3>
+        <div class="press-meta"><span>Feature Article</span><span class="arrow">?</span></div>
+      </article>
+
+      <article class="press-card">
+        <div class="press-outlet">TED · 2023</div>
+        <h3 class="press-headline">First-ever podcast duo to give a TED Talk: "How to Thrive in a Digital Age."</h3>
+        <div class="press-meta"><span>Million Dollar Theatre</span><span class="arrow">?</span></div>
+      </article>
+
+      <article class="press-card">
+        <div class="press-outlet">Wiz Khalifa</div>
+        <h3 class="press-headline">Two titans converge on Stoned &amp; Sexy — a groundbreaking moment for cannabis.</h3>
+        <div class="press-meta"><span>Podcast</span><span class="arrow">?</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMEDY -->
+<section id="comedy" class="comedy">
+  <div class="container">
+    <div class="comedy-grid">
+      <div>
+        <span class="comedy-eyebrow">04 / Stand-Up</span>
+        <h2 class="comedy-title">Live. <span class="slab">Raw.</span><br><span class="shade">Unfiltered.</span></h2>
+        <p class="comedy-desc">Catch Yola live as he brings raw, unfiltered storytelling to stages across the country. Regular sets at <strong>The Improv</strong>, <strong>The Laugh Factory</strong>, and other major venues — alongside some of the biggest names in comedy. Material you will not hear anywhere else. Every show, one of a kind.</p>
+        <a href="#tickets" class="btn-fat">Get Tickets ?</a>
+      </div>
+
+      <div class="venue-list">
+        <div class="venue">
+          <span class="venue-tag">RES</span>
+          <span class="venue-name">The Improv</span>
+          <span class="venue-city">Los Angeles</span>
+        </div>
+        <div class="venue">
+          <span class="venue-tag">RES</span>
+          <span class="venue-name">Laugh Factory</span>
+          <span class="venue-city">Hollywood</span>
+        </div>
+        <div class="venue">
+          <span class="venue-tag">RES</span>
+          <span class="venue-name">Comedy Store</span>
+          <span class="venue-city">Sunset Strip</span>
+        </div>
+        <div class="venue">
+          <span class="venue-tag">TOUR</span>
+          <span class="venue-name">National Dates</span>
+          <span class="venue-city">view all ?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section class="channels" id="channels">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">05 / Official</span>
+      <h2 class="section-title">Only the <span class="slab">authentic</span> handles.</h2>
+    </div>
+
+    <div class="channels-grid">
+      <a class="channel" href="https://www.youtube.com/channel/UCt3g1ExaqC8lVcdumLgJHkw">
+        <div>
+          <div class="channel-platform">YouTube</div>
+          <div class="channel-handle">@dopeasyola</div>
+        </div>
+        <p class="channel-note">top channel in cannabis content</p>
+      </a>
+      <a class="channel" href="https://www.instagram.com/dope.as.yola">
+        <div>
+          <div class="channel-platform">Instagram</div>
+          <div class="channel-handle">@dope.as.yola</div>
+        </div>
+        <p class="channel-note">deleted 30 times &amp; counting</p>
+      </a>
+      <a class="channel" href="https://twitter.com/dope_as_yola_">
+        <div>
+          <div class="channel-platform">X / Twitter</div>
+          <div class="channel-handle">@dope_as_yola_</div>
+        </div>
+        <p class="channel-note">where I post whatever I want</p>
+      </a>
+      <a class="channel" href="https://www.tiktok.com/@dope.as.yola">
+        <div>
+          <div class="channel-platform">TikTok</div>
+          <div class="channel-handle">@dope.as.yola</div>
+        </div>
+        <p class="channel-note">least explicit, lil bit of everything</p>
+      </a>
+      <a class="channel" href="https://www.snapchat.com/add/yolaisdope">
+        <div>
+          <div class="channel-platform">Snapchat</div>
+          <div class="channel-handle">yolaisdope</div>
+        </div>
+        <p class="channel-note">behind the scenes of my life</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-massive">
+      Stay <span class="slab">dope.</span><br>
+      <span class="shade">stay loud.</span>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>? Newsletter</h4>
+        <p style="color: var(--ink-cream); margin-bottom: 6px;">Drops, dates &amp; dispatches direct from Yola.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='You\'re in ?'">
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit">Join Up</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h4>? Brands</h4>
+        <a href="#">Dope As Usual</a>
+        <a href="#">Push Trees</a>
+        <a href="#">The Dopest Shop</a>
+        <a href="#">Proper Papers</a>
+      </div>
+      <div class="footer-col">
+        <h4>? Site</h4>
+        <a href="#about">About</a>
+        <a href="#press">Press</a>
+        <a href="#comedy">Comedy</a>
+        <a href="#tickets">Tickets</a>
+      </div>
+      <div class="footer-col">
+        <h4>? Contact</h4>
+        <a href="mailto:bookings@dopeasyola.com">Bookings</a>
+        <a href="mailto:press@dopeasyola.com">Press</a>
+        <a href="mailto:business@dopeasyola.com">Business</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 DAY Media, LLC. All rights reserved.</span>
+      <span>Made with ? in Los Angeles</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
+
+  document.querySelectorAll('.section-head, .about-grid, .brands-grid, .press-list, .comedy-grid, .channels-grid, .footer-massive, .stats-grid')
+    .forEach(el => { el.classList.add('reveal'); obs.observe(el); });
+</script>
+
+</body>
+</html>
